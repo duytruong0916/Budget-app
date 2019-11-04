@@ -5,16 +5,9 @@ import * as serviceWorker from './serviceWorker';
 import AppRouter from './routers/AppRouter'; 
 import configureStore from './store/configureStore';
 import {Provider} from 'react-redux';
-import {AddExpense} from './actions/expenses';
-import {setTextFilter} from './actions/filters';
-import getVisibleExpense from './selectors/expenses'
+
 const store = configureStore();
-store.dispatch(AddExpense({description: "duy truong", amount: 500, createAt: 10}));
-store.dispatch(AddExpense({description: "anh truong" , amount: 400, createAt: 20}));
-store.dispatch(setTextFilter('truong'))
-const state = store.getState();
-console.log(getVisibleExpense(state.expense, state.filter));
-console.log(store.getState());
+
 
 const jsx = (
     <Provider store = {store}>
