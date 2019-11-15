@@ -6,7 +6,6 @@ import 'react-dates/initialize';
 export default class ExpenseForm extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       description: props.expense ? props.expense.description : '',
       note: props.expense ? props.expense.note : '',
