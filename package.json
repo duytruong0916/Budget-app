@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "email-validator": "^2.0.4",
     "enzyme": "^3.10.0",
+    "firebase": "^7.4.0",
+    "history": "^4.10.1",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
@@ -13,9 +17,12 @@
     "react-dates": "^21.3.1",
     "react-dom": "^16.11.0",
     "react-redux": "^7.1.1",
+    "react-redux-firebase": "^3.0.5",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "redux": "^4.0.4",
+    "redux-firestore": "^0.10.0",
+    "redux-thunk": "^2.3.0",
     "uuid": "^3.3.3"
   },
   "scripts": {
@@ -41,6 +48,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "cross-env": "^6.0.3",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint-config-airbnb-deps": "^10.0.2",
     "jest": "^24.9.0"
