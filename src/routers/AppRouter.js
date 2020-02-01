@@ -1,5 +1,5 @@
 import React from 'react';
-import {Router,Switch, Route,NavLink} from 'react-router-dom';
+import {Router,Switch} from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
 import AddExpensePage from '../components/AddExpensePage';
@@ -14,6 +14,7 @@ import NotFoundPage from '../components/NotFoundPage';
 import PublicHeader from '../components/PublicHeader';
 
 export const history = createHistory();
+
 const AppRouter = () => (
   <Router history={history}>
     <div>
